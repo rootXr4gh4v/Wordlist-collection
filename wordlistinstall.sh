@@ -1,4 +1,5 @@
 #!/bin/bash
+chmod +x Wordlist-collection/wordlistinstall.sh
 wordlistsd(){
 echo -e "\n${BK}DOWNLOADING ALL THE WORDLISTS${RT}"
 mkdir -p tools/wordlists
