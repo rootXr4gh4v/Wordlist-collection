@@ -18,7 +18,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
     
-echo -e "\n- Downloading resolvers wordlists"
+echo -e "\n- Downloading resolvers files"
 wget -q https://raw.githubusercontent.com/six2dez/resolvers_reconftw/main/resolvers.txt -O resolvers.txt
 if [ -s /root/tools/wordlists/resolvers.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
@@ -26,7 +26,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
     
-echo -e "\n- Downloading Subjack wordlists"
+echo -e "\n- Downloading Subjack fingerprint.json"
 wget -q https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -O fuzz.txt
 if [ -s /root/tools/wordlists/fuzz.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
@@ -34,7 +34,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
 
-echo -e "\n- Downloading LFI wordlist"
+echo -e "\n- Downloading LFI payloads wordlists"
 wget -q https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt -O LFI-payload.txt
 if [ -s /root/tools/wordlists/LFI-payload.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
@@ -42,7 +42,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi 
 
-echo -e "\n- Downloading Open Redirect wordlists"
+echo -e "\n- Downloading Open Redirect payload wordlists"
 wget -q https://raw.githubusercontent.com/emadshanab/wordlists-2/main/Open%20Redirect%20Payload%20List -O openredirect-payload.txt
 if [ -s /root/tools/wordlists/openredirect-payload.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
