@@ -50,6 +50,17 @@ else
     echo -e "${YW}FAILED${RT}"
 fi     
 
+echo -e "\n- Downloading Open Redirect wordlists"
+#installing wordlists
+wget -q "https://localdomain.pw/subdomain-bruteforce-list/all.txt.zip" && unzip all.txt.zip &> /dev/null
+if [ -s /root/tools/wordlists/all.txt.zip ]; then
+    echo -e "${GR}SUCCESS${RT}"
+else
+    echo -e "${YW}FAILED${RT}"
+fi
+
+
+
 echo -e "\n- Downloading Subjack wordlists"
 wget -q https://raw.githubusercontent.com/haccer/subjack/master/fingerprints.json -O /root/tools/fingerprints.json
 if [ -s /root/tools/fingerprints.json ]; then
