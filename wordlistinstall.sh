@@ -19,7 +19,7 @@ else
 fi
     
 echo -e "\n- Downloading resolvers wordlists"
-wget -q https://raw.githubusercontent.com/janmasarik/resolvers/master/resolvers.txt -O resolvers.txt
+wget -q https://raw.githubusercontent.com/six2dez/resolvers_reconftw/main/resolvers.txt -O resolvers.txt
 if [ -s /root/tools/wordlists/resolvers.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
 else
