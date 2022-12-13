@@ -50,7 +50,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi     
 
-echo -e "\n- Downloading Open Redirect wordlists"
+echo -e "\n- Downloading All.txt Subs"
 #installing wordlists
 wget -q "https://localdomain.pw/subdomain-bruteforce-list/all.txt.zip" && unzip all.txt.zip &> /dev/null
 if [ -s /root/tools/wordlists/all.txt ]; then
