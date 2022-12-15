@@ -52,7 +52,7 @@ fi
 
 echo -e "\n- Downloading All.txt Subs"
 #installing wordlists
-wget -q "https://localdomain.pw/subdomain-bruteforce-list/all.txt.zip" && unzip all.txt.zip &> /dev/null
+wget -q "https://localdomain.pw/subdomain-bruteforce-list/all.txt.zip" && unzip all.txt.zip
 if [ -s /root/tools/wordlists/all.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
 else
