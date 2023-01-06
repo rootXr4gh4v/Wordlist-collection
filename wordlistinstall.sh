@@ -80,7 +80,7 @@ fi
 
 echo -e "\n- Downloading jhadix-all Subs"
 #installing wordlists
-https://gist.githubusercontent.com/jhaddix/b80ea67d85c13206125806f0828f4d10/raw/c81a34fe84731430741e0463eb6076129c20c4c0/content_discovery_all.txt -O jhaddix-cdall.txt
+wget -q https://gist.githubusercontent.com/jhaddix/b80ea67d85c13206125806f0828f4d10/raw/c81a34fe84731430741e0463eb6076129c20c4c0/content_discovery_all.txt -O jhaddix-cdall.txt
 if [ -s /root/tools/jhaddix-cdall.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
 else
