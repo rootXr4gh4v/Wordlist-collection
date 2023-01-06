@@ -3,6 +3,7 @@ wordlistsd(){
 echo -e "\n${BK}DOWNLOADING ALL THE WORDLISTS${RT}"
 mkdir -p tools/wordlists
 cd tools/wordlists
+
 echo -e "\n- Downloading subdomains wordlists"
  wget -q https://raw.githubusercontent.com/pacho15/MyGithubDocks/main/keywords.txt -O keywords.txt
 if [ -s /root/tools/wordlists/keywords.txt ]; then
@@ -10,6 +11,7 @@ if [ -s /root/tools/wordlists/keywords.txt ]; then
 else
     echo -e "${YW}FAILED${RT}"
 fi
+
 echo -e "\n- Downloading subdomains wordlists"
  wget -q https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/deepmagic.com-prefixes-top50000.txt -O deepmagic-top50000.txt
 if [ -s /root/tools/wordlists/deepmagic-top50000.txt ]; then
@@ -76,7 +78,7 @@ if [ -s /root/tools/fingerprints.json ]; then
 else
     echo -e "${YW}FAILED${RT}"
 fi
-}
+
 
 echo -e "\n- Downloading jhadix-all Subs"
 #installing wordlists
