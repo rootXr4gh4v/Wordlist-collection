@@ -59,6 +59,14 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
 
+echo -e "\n- Downloading jhadix-all Subs"
+#installing wordlists
+wget -q https://gist.githubusercontent.com/jhaddix/f64c97d0863a78454e44c2f7119c2a6a/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -O jhaddix-subsall.txt
+if [ -s /root/tools/wordlists/jhaddix-subsall.txt ]; then
+    echo -e "${GR}SUCCESS${RT}"
+else
+    echo -e "${YW}FAILED${RT}"
+fi
 
 
 echo -e "\n- Downloading Subjack wordlists"
@@ -70,5 +78,14 @@ else
 fi
 }
 
+echo -e "\n- Downloading jhadix-all Subs"
+#installing wordlists
+https://gist.githubusercontent.com/jhaddix/b80ea67d85c13206125806f0828f4d10/raw/c81a34fe84731430741e0463eb6076129c20c4c0/content_discovery_all.txt -O jhaddix-cdall.txt
+if [ -s /root/tools/jhaddix-cdall.txt ]; then
+    echo -e "${GR}SUCCESS${RT}"
+else
+    echo -e "${YW}FAILED${RT}"
+fi
+}
 
 wordlistsd
