@@ -70,6 +70,14 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
 
+echo -e "\n- Downloading jhadix-all Subs"
+#installing wordlists
+wget -q https://raw.githubusercontent.com/trickest/wordlists/main/inventory/subdomains.txt -O subdomainswd.txt
+if [ -s /root/tools/wordlists/subdomainswd.txt ]; then
+    echo -e "${GR}SUCCESS${RT}"
+else
+    echo -e "${YW}FAILED${RT}"
+fi
 
 echo -e "\n- Downloading Subjack wordlists"
 wget -q https://raw.githubusercontent.com/haccer/subjack/master/fingerprints.json -O /root/tools/fingerprints.json
