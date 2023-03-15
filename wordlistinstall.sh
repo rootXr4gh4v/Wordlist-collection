@@ -28,7 +28,7 @@ else
     echo -e "${YW}FAILED${RT}"
 fi
     
-echo -e "\n- Downloading Subjack fingerprint.json"
+echo -e "\n- Downloading Subjack fuzz.txt"
 wget -q https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -O fuzz.txt
 if [ -s /root/tools/wordlists/fuzz.txt ]; then
     echo -e "${GR}SUCCESS${RT}"
@@ -80,8 +80,8 @@ else
 fi
 
 echo -e "\n- Downloading Subjack wordlists"
-wget -q https://raw.githubusercontent.com/haccer/subjack/master/fingerprints.json -O /root/tools/fingerprints.json
-if [ -s /root/tools/fingerprints.json ]; then
+wget -q https://raw.githubusercontent.com/haccer/subjack/master/fingerprints.json -O /root/tools/wordlists/fingerprints.json
+if [ -s /root/tools/wordlists/fingerprints.json ]; then
     echo -e "${GR}SUCCESS${RT}"
 else
     echo -e "${YW}FAILED${RT}"
