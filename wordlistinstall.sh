@@ -96,7 +96,7 @@ if [ -s /root/tools/wordlists/jhaddix-cdall.txt ]; then
 else
     echo -e "${YW}FAILED${RT}"
 fi
-}
+
 echo -e "\n- Downloading short fuzz"
 #installing wordlists
 wget -q https://raw.githubusercontent.com/p4cho-root/wordlists/main/short-fuzz.txt -O short-fuzz.txt
